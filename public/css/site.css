@@ -1,0 +1,175 @@
+
+.root {
+    background-color: #ffffff;
+    display: flex;    
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 8;
+}
+
+.child-row {
+    background-color: hsl(0, 0%, 100%);    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    padding: 0 10 0 10;        
+}
+
+.content-presentation {
+    text-align: justify;
+}
+
+/**********  Header Main Div  ****************/
+.header-cv {
+    height: 30%;    
+}
+
+.header-id-photo {
+    background-color: #ffffff;    
+    width: 33%;    
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    padding: 1%;        
+}
+
+.header-logo {
+    background-color:rgb(255, 255, 255);
+    height: auto;    
+    width: 35%;    
+    padding: 1%;    
+}
+
+.header-info {
+    background-color:fff;
+    height: auto;    
+    width: 26%;    
+    padding: 1%;
+    vertical-align: middle;   
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+/********** Header sub div or component ***************/
+/*.img-id-photo {
+    display: block;
+    max-width: 45%;
+    width: auto;    
+    height: auto;     
+    border-radius: 10px;
+    margin: auto;    
+}*/
+.img-id-photo {
+    width: 50%;        
+    border-radius: 10px;    
+}
+
+.img-logo{        
+    width: 70%;        
+}
+
+.sub-header-logo {        
+    height: 100%;    
+    width: 100%;    
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.sub-header-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 3px;    
+}
+
+.sub-header-info-item {
+    padding: 4px;        
+}
+
+.sub-header-presentation {    
+}
+
+.sub_header_item_titre {
+    text-align: center;
+    font-size: 1.4em;    
+    font-weight: 600;
+    padding: 0 10 10 10;
+}
+
+.sub_header_item_presentation {
+    padding: 0 10 10 10;    
+    text-align: justify;
+}
+
+.sub-header-social-network {
+    background-color: #e4e4e4;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3 3 3 3;    
+}
+
+/********** CONTENT **************/
+.content-left-block {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.content-left-block-detail {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    margin: 2px;
+    grid-template-columns: 250px auto ; 
+    padding: 5px;
+}
+
+.content-left-block-title {
+    font-size: 1.5em;
+}
+
+.content-detail-date {
+    font-style: italic;    
+}
+
+.content-detail-form-diplome {
+    font-weight: bold;
+}
+
+.content-detail-exp-poste {
+    font-weight: bold;        
+    font-size: larger;
+}
+
+/** GLOBAL **/
+.text-highlight {
+    color: rgb(0, 32, 138);
+}
+
+.margin_5px {
+    margin:5px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+ ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(172, 0, 120);
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.3em; /* Also needed for space (tweak if needed) */
+  }
+
+ a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;    
+ }
