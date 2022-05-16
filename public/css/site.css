@@ -62,12 +62,12 @@
     margin: auto;    
 }*/
 .img-id-photo {
-    width: 50%;        
+    width: 40%;        
     border-radius: 10px;    
 }
 
 .img-logo{        
-    width: 70%;        
+    width: 100%;        
 }
 
 .sub-header-logo {        
@@ -101,7 +101,7 @@
 }
 
 .sub_header_item_presentation {
-    padding: 0 10 10 10;    
+    padding: 0 20% 10 20%;    
     text-align: justify;
 }
 
@@ -146,6 +146,15 @@
     font-size: larger;
 }
 
+.content-detail-comptech-level {
+    color:rgb(209, 94, 0);
+    font-size: larger;
+}
+
+.content-detail-techno {
+    font-weight: bold;
+}
+
 /** GLOBAL **/
 .text-highlight {
     color: rgb(0, 32, 138);
@@ -153,6 +162,10 @@
 
 .margin_5px {
     margin:5px;
+}
+
+.generic-star {
+    width: 16px;
 }
 
 ul {

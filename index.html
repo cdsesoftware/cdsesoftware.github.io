@@ -4,6 +4,7 @@
             CDSE - Sofware & Development
         </title>
         <link rel="stylesheet" href="./public/css/site.css">        
+        <script type="text/javascript" src="./public/script/site.js"></script>
     </head>
 
     <body>
@@ -273,12 +274,81 @@
                         <div class="content-left-block-title">
                             Compétences techniques
                             <hr>
-                        </div>      
-                        <div>
+                        </div>  
 
-                        </div>                  
+                        <!-- .NET -->
+                        <div class="content-left-block-detail">
+                            <div class="content-detail-techno">
+                                Microsoft .NET
+                            </div>
+                            <div class="content-detail-comptech">
 
+                                <div class="content-detail-comptech-level" id="comp-msnet"> 
+                                </div>
 
+                                <div class="content-detail-comptech-detail">
+                                    <b class="text-highlight">Solide expérience :</b> C# (Winforms, ASP.NET Core MVC, REST, SOAP,  Win Services, NUnit, Entity Framework, AutoFac (DI) )
+                                </div>
+
+                                <div class="content-detail-comptech-detail">
+                                    <span class="text-highlight">Première expérience :</span> WPF & Xamarin forms (MvvM)
+                                </div>
+                            </div>                            
+                        </div>                                                
+
+                        <!-- DELPHI -->
+                        <div class="content-left-block-detail">
+                            <div class="content-detail-techno">
+                                Delphi 
+                            </div>
+                            <div class="content-detail-comptech">
+
+                                <div class="content-detail-comptech-level" id="comp-delphi"> 
+                                </div>
+
+                                <div class="content-detail-comptech-detail">
+                                    <b class="text-highlight">Solide expérience :</b> WinForms, Win Service, ActiveX/COM, ADO, Spring 4D (ORM & DI), TestInsight...
+                                </div>
+                            </div>                            
+                        </div>                                                
+
+                        <!-- Web Front-End -->
+                        <div class="content-left-block-detail">
+                            <div class="content-detail-techno">
+                                Web Front-End 
+                            </div>
+                            <div class="content-detail-comptech">
+
+                                <div class="content-detail-comptech-level" id="comp-webfrontend"> 
+                                </div>
+
+                                <div class="content-detail-comptech-detail">
+                                    <b class="text-highlight">Bonne expérience :</b> Javascript, HTML 5, CSS, Bootstrap, JQuery
+                                </div>
+
+                                <div class="content-detail-comptech-detail">
+                                    <span class="text-highlight">Première expérience :</span> Vue.js 3.0
+                                </div>
+
+                            </div>                            
+                        </div> 
+
+                        <!-- PHP -->
+                        <div class="content-left-block-detail">
+                            <div class="content-detail-techno">
+                                PHP 
+                            </div>
+                            <div class="content-detail-comptech">
+
+                                <div class="content-detail-comptech-level" id="comp-php"> 
+                                </div>
+
+                                <div class="content-detail-comptech-detail">
+                                    <b class="text-highlight">Bonne expérience :</b> PHP 7, Symfony 5.x
+                                </div>
+
+                            </div>                            
+                        </div> 
                     </div>
                 </div>
                 <div class="subchild-col content-right">
@@ -294,5 +364,11 @@
                 </div>                
             </div>
         </div>
+        <script type="text/javascript">
+            SetCompetenceNote('comp-msnet', 8);
+            SetCompetenceNote('comp-delphi', 8);
+            SetCompetenceNote('comp-webfrontend', 6);
+            SetCompetenceNote('comp-php', 6);            
+        </script>        
     </body>
 </html>
