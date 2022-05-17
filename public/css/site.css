@@ -110,7 +110,7 @@
     width: 100%;    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 3 3 3 3;    
 }
@@ -146,13 +146,12 @@
     font-size: larger;
 }
 
-.content-detail-comptech-level {
-    color:rgb(209, 94, 0);
-    font-size: larger;
+.content-detail-comptech-level {    
+    height:1.5em;
 }
 
 .content-detail-techno {
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 /** GLOBAL **/
@@ -168,13 +167,19 @@
     width: 16px;
 }
 
+.horizontal-box {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+}
+
 ul {
     list-style: none; /* Remove default bullets */
   }
   
  ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: rgb(172, 0, 120);
+    color: rgb(0, 32, 138);
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
