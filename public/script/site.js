@@ -10,9 +10,9 @@ function SetCompetenceNote(idcompetence, note) {
   for (let cpt=1; cpt <= 10; cpt++) {
     let elem = document.createElement("img");
     if (cpt <= note) {
-        elem.setAttribute("src", "./public/img/star-blue-64x64.png");
+        elem.setAttribute("src", "./public/img/star-blue-56x53.png");
     } else {
-        elem.setAttribute("src", "./public/img/star-grey-64x64.png");
+        elem.setAttribute("src", "./public/img/star-grey-56x53.png");
     }    
     elem.setAttribute("class", "generic-star");
     compDiv.appendChild(elem);
