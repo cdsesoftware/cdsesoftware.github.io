@@ -1,12 +1,20 @@
 
 :root {
-    --color-highlight: #555dce;
+    --color-highlight-blue: #555dce;
+    --color-highlight-pink: #ECB6B6;    
     --color-blue-cdse: #2F4253;
     --color-bg-root:#6A6A6A;
     --color-bg-main-content: #adadad;
     --color-bg-detail-content: #e4e4e4;
+    --color-bg-for-highlight-pink: #262644;
     --color-line-odd: #EEEEEE;
-    --color-line-even: #FFFFFF;     
+    --color-line-even: #FFFFFF;
+    --color-text-light-1: #FFFFFF;
+    --color-text-light-2: #EEEEEE;    
+    --color-text-grey-1: #909090;    
+    --color-text-grey-1: #606060;        
+    --color-text-dark-1: #202020;    
+    --color-text-dark-2: #0a0a0a;            
 }
 
 .root {
@@ -21,8 +29,8 @@
 .child-row {    
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;    
-    padding: 0 10 0 10; 
+    flex-wrap: nowrap;    
+    padding: 10 0 0 0; 
     min-height: 10px;       
 }
 
@@ -36,11 +44,8 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 5 0 20 10;
-    display: flex;
-    flex-direction: row;
     justify-content: left;
-    align-items: center;
-    flex-wrap:nowrap;    
+    align-items: center;    
 }
 
 /*
@@ -59,7 +64,7 @@
     background-color:var(--color-bg-detail-content);
     height: 220;    
     width: 42%;        
-    min-width: 430px;
+    min-width: 450px;
     display: flex; 
     flex-direction: row;
     justify-items: left;
@@ -67,17 +72,13 @@
     border-radius: 10px;
 }
 
-.header-logo {       
-    height: auto;    
+.header-right {          
+    height: 220;       
     width: 100%;    
     display: flex;    
-    flex-direction: row;
-    justify-content: center;    
-    align-items: center;
-}
-
-.sub-header-logo {
-    width:100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;    
 }
 
 /********** Header sub div or component ***************/
@@ -96,7 +97,13 @@
 }
 
 .img-logo{
-    width: 100%;
+    width: 250;
+}
+
+.sub-header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
 }
 
 .sub-header-info {    
@@ -105,6 +112,12 @@
     justify-content: center;
     align-items: left;
     margin: 10px;
+}
+
+.sub-header-presentation {
+    display: flex;
+    flex-direction: column;    
+    width: 100%;
 }
 
 .sub-header-info-line {
@@ -119,17 +132,16 @@
     padding: 4px;        
 }
 
-.sub_header_item_titre {
-    background-color: var(--color-bg-main-content);
-    color: var(--color-blue-cdse);
+.sub_header_item_titre {       
+    color: var(--color-text-light-2);
     text-align: center;
-    font-size: 1.6em;    
-    font-weight: 600;    
-    padding: 10 10 10 10;
-    border-radius: 10px;    
+    font-size: 1.5em;    
+    font-weight: 600;        
+    border-radius: 10px;     
 }
 
 .sub_header_item_presentation {
+    color: var(--color-text-light-2);    
     padding: 10 10% 10 10%;    
     font-size: larger;
     text-align: justify;
@@ -147,12 +159,26 @@
 }
 
 .subchild-col{
-    background-color: var(--color-bg-main-content);
-    border-radius: 10px;
+    background-color: var(--color-bg-main-content);    
+    border-radius: 10px;    
 }
 
 /********** CONTENT **************/
+.content-left {
+    width:70%;
+    margin:5px;
+}
+
+.content-right {
+    width:30%;
+    margin:5px;    
+}
+
 .content-left-block {    
+    padding: 10px;
+}
+
+.content-right-block {    
     padding: 10px;
 }
 
@@ -174,6 +200,28 @@
     border-radius: 5px;    
 }
 
+.content-right-block-detail:nth-child(odd) {
+    background-color: var(--color-line-odd);    
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;      
+    align-items: center;      
+}
+
+.content-right-block-detail:nth-child(even) {
+    background-color: var(--color-line-even);
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;      
+}
+
+.content-right-block-detail-line {
+    display: grid;    
+    grid-template-columns: 30px auto ;     
+    margin: 5px;
+    height: 30px;
+}
+
 .content-left-block-title {
     font-size: 1.8em;
     display:flex;
@@ -182,7 +230,19 @@
     padding: 20 0 10 2; 
 }
 
+.content-right-block-title {
+    font-size: 1.8em;
+    display:flex;
+    justify-content:left;
+    align-items: center;    
+    padding: 20 0 10 2; 
+}
+
 .content-left-block-title-detail {
+    padding-right: 10px;
+}
+
+.content-right-block-title-detail {
     padding-right: 10px;
 }
 
@@ -216,10 +276,46 @@
     font-size: larger;
 }
 
+.content-info-detail {
+    font-weight: bold;    
+}
+
 /** GLOBAL **/
 .text-highlight {
-    color: var(--color-highlight, blue);     
+    color: var(--color-highlight-blue, blue);     
     font-weight: bold;   
+}
+
+.blue-cdse {
+    color: var(--color-blue-cdse);
+}
+
+.light-1 {
+    color: var(--color-text-light-1);
+}
+
+.light-2 {
+    color: var(--color-text-light-2);
+}
+
+.grey-1 {
+    color: var(--color-text-grey-1);
+}
+
+.grey-2 {
+    color: var(--color-text-grey-2);
+}
+
+.dark-1 {
+    color: var(--color-text-dark-1);
+}
+
+.dark-2 {
+    color: var(--color-text-dark-2);
+}
+
+.bold-1 {
+    font-weight: bold;    
 }
 
 .margin_5px {
@@ -236,13 +332,14 @@
     align-items: center;
 }
 
+
 ul {
     list-style: none; /* Remove default bullets */
   }
   
  ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: var(--color-highlight);
+    color: var(--color-highlight-blue);
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
@@ -253,4 +350,8 @@ ul {
     text-decoration: none;
     color:inherit;
     font-weight: bold;    
+ }
+
+ hr.pink {
+    border: 1px solid var(--color-highlight-pink);
  }
