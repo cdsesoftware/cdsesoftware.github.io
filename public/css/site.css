@@ -219,7 +219,14 @@
     display: grid;    
     grid-template-columns: 30px auto ;     
     margin: 5px;
-    height: 30px;
+    height: 28 px;
+}
+
+.content-right-block-langue-line {
+    display: grid;    
+    grid-template-columns: 50px auto ;     
+    margin: 5px;
+    height: 16px;
 }
 
 .content-left-block-title {
@@ -246,6 +253,17 @@
     padding-right: 10px;
 }
 
+.content-right-block-qualite{
+    background-color: var(--color-line-even);
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
 .content-detail-date {
     font-style: italic;    
 }
@@ -268,6 +286,10 @@
 }
 
 .content-detail-comptech-level {    
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items:center;    
     height:1.5em;
 }
 
@@ -332,9 +354,29 @@
     align-items: center;
 }
 
+.height-min-10{
+    min-height: 10;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+.row-centered-items {
+    display:flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+}
 
 ul {
     list-style: none; /* Remove default bullets */
+    text-align: left;    
   }
   
  ul li::before {
@@ -343,7 +385,7 @@ ul {
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1.3em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.3em; /* Also needed for space (tweak if needed) */    
   }
 
  a {
@@ -355,3 +397,5 @@ ul {
  hr.pink {
     border: 1px solid var(--color-highlight-pink);
  }
+
+ 
