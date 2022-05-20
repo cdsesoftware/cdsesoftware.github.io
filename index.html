@@ -3,7 +3,7 @@
         <title>
             CDSE - Sofware & Development
         </title>
-        <link rel="stylesheet" href="./public/css/site.css">        
+        <link id="csslink" rel="stylesheet" href="./public/css/site-dark.css">        
         <script type="text/javascript" src="./public/script/site.js"></script>
     </head>
 
@@ -19,7 +19,7 @@
                     <div class="sub-header-info">
                         <div class="sub-header-info-line">
                             <div class="sub-header-info-item">
-                                <img src="./public/img/icon-user-24x22.png">
+                                <img src="./public/img/icon-user-24x22.png" onclick="SwitchCss()">
                             </div>
                             <div class="sub-header-info-item">
                                 <b>Christophe Dufour</b>
@@ -64,13 +64,13 @@
                 <!-- LOGO CDSE SOFTWARE -->
                 <div class="header-right">
                     <div class="sub-header-logo">
-                        <img class="img-logo" src="./public/img/logo-grey-lite-1024x366.jpg">
+                        <div class="img-logo"></div>
                     </div>     
                     <div class="sub_header_item_titre">
                         <span>DEVELOPPEMENT INFORMATIQUE </span>
                         <br>
                         <hr class="pink">
-                        <span class="blue-cdse">WEB & LOGICIEL</span>
+                        <span class="text-web-logiciel">WEB & LOGICIEL</span>
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
                                     <br>
                                     <ul>
                                         <li>
-                                            Gestionnaire d'atelier DPP : Progiciel modulaire destiné à la gestion complète de "Service Bureau" (production et personnalisation de passeports électroniques, cartes identités, cartes bancaires, etc.).                                                
+                                            Gestionnaire d'atelier <a href="https://www.entrust.com/fr/issuance-systems/products/software/adaptive-issuance-data-process-production-management">DPP</a> : Progiciel modulaire destiné à la gestion complète de "Service Bureau" (production et personnalisation de passeports électroniques, cartes identités, cartes bancaires, etc.).                                                
                                         </li>
                                         <li>
                                             Modules et plug-ins DPP personnalisés pour les ateliers clients internationaux (interfaçage plateformes, annuaires, intégration de PKI, etc.)
@@ -259,7 +259,10 @@
                                             Interface de pilotage des machines Entrust (personnalisation) et des lecteurs Gemalto AT9000 (contrôle numérique et optique de documents sécurisés norme ICAO (Passeport et carte d'identité)
                                         </li>
                                         <li>
-                                            Conception de rapports de suivi et de statistiques de production.
+                                            Développement d'extensions <a href="https://www.entrust.com/issuance-systems/products/software/adaptive-issuance-instant-financial-issuance"> CardWizard </a> pour interfaçage avec les <i>Card Management System</i> de nos clients (banques internationles).
+                                        </li>
+                                        <li>
+                                            Conception de rapports de suivi de production, d'inventaire, de contrôle qualité et de statistiques sur les solutions DPP. 
                                         </li>
                                         <li>
                                             Mise en place de formations techniques en France et à l'étranger dans le cadre d'intégrations de projets DPP (Javascript, SQL, Crystal Report, DPP API et PKI).
@@ -457,7 +460,8 @@
                                 </div>
 
                                 <div class="content-detail-comptech-detail">
-                                    <b class="text-highlight">Bonne expérience :</b> PC Soft Windev 26
+                                    <b class="text-highlight">Bonne expérience :</b>
+                                     PC Soft Windev 26
                                 </div>
 
                             </div>                            
@@ -475,7 +479,8 @@
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
-                                    <b>MS SQL Server</b>, MariaDB, MySQL, Oracle Db (8i, 10g)
+                                    <span class="text-highlight">MS SQL Server</span>
+                                    , MariaDB, MySQL, Oracle Db (8i, 10g)
                                 </div>
                             </div>                            
                         </div> 
@@ -491,7 +496,8 @@
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
-                                    <b>SAP Crystal Report</b>, SQL Server Report Service, Windev Report, Rave Report
+                                    <span class="text-highlight">SAP Crystal Report</span>
+                                    , SQL Server Report Service, Windev Report, Rave Report
                                 </div>
                             </div>                            
                         </div> 
@@ -511,11 +517,13 @@
                         <!-- OUTILS COLLABORATIFS -->
                         <div class="content-left-block-detail">
                             <div class="content-detail-techno">
-                                Autres outils
+                                Collaboratifs & Versioning
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
-                                    <b>GIT</b>, <b>SVN</b>, VSS, GDS, Tortoise, Jenkins, MS Build, Mantis, SOAP UI
+                                    <span class="text-highlight">GIT</span>,
+                                    <span class="text-highlight">SubVersion</span>,
+                                    VSS, GDS, Tortoise, Jenkins, MS Build, Mantis, SOAP UI
                                 </div>
                             </div>                            
                         </div> 

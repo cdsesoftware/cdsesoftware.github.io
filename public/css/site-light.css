@@ -1,16 +1,19 @@
 
 :root {
     --color-highlight-blue: #555dce;
-    --color-highlight-pink: #ECB6B6;    
+    --color-highlight-pink: #cfcfcf;    
     --color-blue-cdse: #2F4253;
-    --color-bg-root:#6A6A6A;
-    --color-bg-main-content: #adadad;
-    --color-bg-detail-content: #e4e4e4;
-    --color-bg-for-highlight-pink: #262644;
+    --color-blue-overdark-cdse: var(--color-blue-cdse);
+
+    --color-bg-root:#f0efef;
+    --color-bg-main-content: #c8c7ce;
+    --color-bg-detail-content: #ffffff;    
+
     --color-line-odd: #EEEEEE;
     --color-line-even: #FFFFFF;
-    --color-text-light-1: #FFFFFF;
-    --color-text-light-2: #EEEEEE;    
+
+    --color-text-light-1: #ffffff;
+    --color-text-light-2: #272727;    
     --color-text-grey-1: #909090;    
     --color-text-grey-1: #606060;        
     --color-text-dark-1: #202020;    
@@ -97,7 +100,11 @@
 }
 
 .img-logo{
-    width: 250;
+    background-image: url(../img/Logo-white-lite-1024.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 140;
 }
 
 .sub-header-logo {
@@ -144,8 +151,7 @@
     color: var(--color-text-light-2);    
     padding: 10 10% 10 10%;    
     font-size: larger;
-    text-align: justify;
-    color: #ffffff;
+    text-align: justify;    
 }
 
 .sub-header-social-network {
@@ -304,13 +310,23 @@
 
 /** GLOBAL **/
 .text-highlight {
-    color: var(--color-highlight-blue, blue);     
+    color: var(--color-blue-cdse, blue);     
     font-weight: bold;   
 }
 
 .blue-cdse {
     color: var(--color-blue-cdse);
 }
+
+.blue-overdark-cdse {
+    color: var(--color-blue-overdark-cdse);
+}
+
+.text-web-logiciel {
+    color: var(--color-blue-overdark-cdse);
+    font-size: larger;
+}
+
 
 .light-1 {
     color: var(--color-text-light-1);
@@ -389,8 +405,9 @@ ul {
   }
 
  a {
-    text-decoration: none;
-    color:inherit;
+    text-decoration: underline;
+    color: inherit;    
+
     font-weight: bold;    
  }
 
