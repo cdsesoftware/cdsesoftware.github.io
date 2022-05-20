@@ -1,9 +1,10 @@
 <html>
     <head>
         <title>
-            CDSE - Sofware & Development
-        </title>
+            CDSE - Sofware & Development        
+        </title>        
         <link id="csslink" rel="stylesheet" href="./public/css/site-dark.css">        
+        <link id="csscommon" rel="stylesheet" href="./public/css/site-common.css">                        
         <script type="text/javascript" src="./public/script/site.js"></script>
     </head>
 
@@ -19,7 +20,7 @@
                     <div class="sub-header-info">
                         <div class="sub-header-info-line">
                             <div class="sub-header-info-item">
-                                <img src="./public/img/icon-user-24x22.png" onclick="SwitchCss()">
+                                <img src="./public/img/icon-user-24x22.png">
                             </div>
                             <div class="sub-header-info-item">
                                 <b>Christophe Dufour</b>
@@ -30,7 +31,7 @@
                                 <img src="./public/img/icon-email-24x24.png">
                             </div>
                             <div class="sub-header-info-item">
-                                <b>cdse.software@gmail.com</b>
+                                <b><a href="mailto:mailto:cdse.software@gmail.com">cdse.software@gmail.com</a></b>
                             </div>
                         </div>
                         <div class="sub-header-info-line">
@@ -75,6 +76,12 @@
                 </div>
             </div>
 
+            <div class="toggle-day-night">
+                <div class="sub-header-presentation">                    
+                    <div class="img-toggle-day-night" onclick="SwitchCss()" title="Changer le thème..."></div>
+                </div>
+            </div>
+            
             <!-- CV PRESENTATION TEXT -->            
             <div class="child-row">
                 <div class="sub-header-presentation">                    
@@ -256,7 +263,7 @@
                                             Modules et plug-ins DPP personnalisés pour les ateliers clients internationaux (interfaçage plateformes, annuaires, intégration de PKI, etc.)
                                         </li>
                                         <li>
-                                            Interface de pilotage des machines Entrust (personnalisation) et des lecteurs Gemalto AT9000 (contrôle numérique et optique de documents sécurisés norme ICAO (Passeport et carte d'identité)
+                                            Interface de pilotage des machines Entrust (personnalisation) et des lecteurs <a href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/document-readers/at9000-mk2">Thales AT9000</a> désigné pour le contrôle numérique et optique de documents sécurisés norme ICAO (Passeport et carte d'identité)
                                         </li>
                                         <li>
                                             Développement d'extensions <a href="https://www.entrust.com/issuance-systems/products/software/adaptive-issuance-instant-financial-issuance"> CardWizard </a> pour interfaçage avec les <i>Card Management System</i> de nos clients (banques internationles).
@@ -347,7 +354,7 @@
                     </div>
 
                     <!---------------------------->
-                    <!-- COMPETENCES TECHNIQUES -->
+                    <!-- COMPETENCES FRAMEWORK  -->
                     <!---------------------------->                    
                     <div class="content-left-block content-competence">
                         <div class="content-left-block-title">
@@ -355,7 +362,7 @@
                                 <img src="./public/img/icon-competence-32x31.png">
                             </div>
                             <div class="content-left-block-title-detail">
-                                Compétences techniques
+                                Compétences : Framework & Langages
                             </div>                                                                                
                         </div>
 
@@ -363,10 +370,11 @@
                         <div class="content-left-block-detail">
                             <div class="content-detail-techno">
                                 Microsoft .NET                                
-                                <br>
-                                <img src="./public/img/net-logo-32x32.png">  
-                                <img src="./public/img/csharp-logo-32x36.png">  
-                                <img src="./public/img/aspnet-logo-32x32.png">
+                                <div class="content-detail-techno-icon">                                
+                                    <img src="./public/img/net-logo-32x32.png">  
+                                    <img src="./public/img/csharp-logo-32x36.png">  
+                                    <img src="./public/img/aspnet-logo-32x32.png">
+                                </div>
                             </div>
                             <div class="content-detail-comptech">
 
@@ -387,9 +395,9 @@
                         <div class="content-left-block-detail">
                             <div class="content-detail-techno">
                                 Delphi 
-                                <br>
-                                <img src="./public/img/delphi-logo-32x32.png">  
-
+                                <div class="content-detail-techno-icon">                                
+                                    <img src="./public/img/delphi-logo-32x32.png">  
+                                </div>
                             </div>
                             <div class="content-detail-comptech">
 
@@ -406,10 +414,11 @@
                         <div class="content-left-block-detail">
                             <div class="content-detail-techno">
                                 Web Front-End 
-                                <br>
-                                <img src="./public/img/html-logo-32x45.png">  
-                                <img src="./public/img/css-logo-32x45.png">  
-                                <img src="./public/img/js-logo-32x45.png">  
+                                <div class="content-detail-techno-icon">
+                                    <img src="./public/img/html-logo-32x45.png">  
+                                    <img src="./public/img/css-logo-32x45.png">  
+                                    <img src="./public/img/js-logo-32x45.png">  
+                                </div>
                             </div>
                             <div class="content-detail-comptech">
 
@@ -431,9 +440,10 @@
                         <div class="content-left-block-detail">
                             <div class="content-detail-techno">
                                 PHP 
-                                <br>
-                                <img src="./public/img/php-logo-32x32.png">  
-                                <img src="./public/img/symfony-logo-32x32.png">  
+                                <div class="content-detail-techno-icon">
+                                    <img src="./public/img/php-logo-32x32.png">  
+                                    <img src="./public/img/symfony-logo-32x32.png">  
+                                </div>
                             </div>
                             <div class="content-detail-comptech">
 
@@ -451,8 +461,9 @@
                         <div class="content-left-block-detail">
                             <div class="content-detail-techno">
                                 Windev 
-                                <br>
-                                <img src="./public/img/windev-logo-32x32.png">                                  
+                                <div class="content-detail-techno-icon">
+                                    <img src="./public/img/windev-logo-32x32.png">                                  
+                                </div>    
                             </div>
                             <div class="content-detail-comptech">
 
@@ -466,33 +477,51 @@
 
                             </div>                            
                         </div> 
+                    </div>
+
+                    <!---------------------------->
+                    <!-- COMPETENCES FRAMEWORK  -->
+                    <!---------------------------->                    
+                    <div class="content-left-block content-competence">
+                        <div class="content-left-block-title">
+                            <div class="content-left-block-title-detail">
+                                <img src="./public/img/icon-data-env-32x31.png">
+                            </div>
+                            <div class="content-left-block-title-detail">
+                                Compétences : Environnement technique 
+                            </div>                                                                                
+                        </div>
+
 
                         <!-- DB SYSTEM -->
                         <div class="content-left-block-detail">
-                            <div class="content-detail-techno">
-                                Database System 
-                                <br>
-                                <img src="./public/img/sqlserver-logo-32x32.png">                                
-                                <img src="./public/img/mariadb-logo-32x32.png">    
-                                <img src="./public/img/mysql-logo-32x32.png">    
-                                <img src="./public/img/oracle-logo-32x32.png">                                                            
+                            <div class="content-detail-db">
+                                <div>
+                                    <img src="./public/img/icon-db-24.png">
+                                </div>
+                                &nbsp;&nbsp;
+                                <div>
+                                    Systèmes de données
+                                </div>                                 
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
-                                    <span class="text-highlight">MS SQL Server</span>
-                                    , MariaDB, MySQL, Oracle Db (8i, 10g)
+                                    <span class="text-highlight">MS SQL Server</span>,
+                                    MariaDB, MySQL, Oracle Db (8i, 10g), XML
                                 </div>
                             </div>                            
                         </div> 
 
                         <!-- REPORTING -->
                         <div class="content-left-block-detail">
-                            <div class="content-detail-techno">
-                                Reporting 
-                                <br>
-                                <img src="./public/img/crystal-logo-32x32.png">
-                                <img src="./public/img/ssrs-logo-32x32.png">
-                                <img src="./public/img/windevreport-logo-32x32.png">
+                            <div class="content-detail-db">
+                                <div>
+                                    <img src="./public/img/icon-report-24.png">
+                                </div>
+                                &nbsp;&nbsp;
+                                <div>
+                                    Reporting
+                                </div>                                                                 
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
@@ -504,8 +533,14 @@
 
                         <!-- CRYPTO & SECURITE -->
                         <div class="content-left-block-detail">
-                            <div class="content-detail-techno">
-                                Crypto & Sécurité
+                            <div class="content-detail-db">
+                                <div>
+                                    <img src="./public/img/icon-security-24.png">
+                                </div>
+                                &nbsp;&nbsp;
+                                <div>
+                                    Crypto & Sécurité
+                                </div>                                                                 
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
@@ -516,8 +551,14 @@
 
                         <!-- OUTILS COLLABORATIFS -->
                         <div class="content-left-block-detail">
-                            <div class="content-detail-techno">
-                                Collaboratifs & Versioning
+                            <div class="content-detail-db">
+                                <div>
+                                    <img src="./public/img/icon-git-24.png">
+                                </div>
+                                &nbsp;&nbsp;
+                                <div>
+                                    Contrôle de source & Versioning
+                                </div>                                                                 
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
@@ -530,6 +571,10 @@
 
                     </div>
                 </div>
+
+                <!---------------------------->
+                <!--     INFOS GENERALES    -->
+                <!---------------------------->                    
                 <div class="subchild-col content-right">
                     <div class="content-right-block content-info-perso">
                         <div class="content-right-block-title">
@@ -650,7 +695,7 @@
                                 Bon niveau rédactionnel 
                             </div>    
                             <div class="justify">
-                                Grâce à mon longue expérience au sein d'une entreprise américaine, je pense pouvoir proposer un bon niveau rédactionnel en français et en anglais pour :
+                                Grâce à ma longue expérience au sein d'une entreprise américaine, je pense pouvoir proposer un bon niveau rédactionnel en français et en anglais pour :
                                 <ul>
                                     <li>
                                         définir des spécifications fonctionnelles et techniques
