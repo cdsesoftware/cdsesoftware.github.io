@@ -40,4 +40,20 @@ function SwitchCss() {
   }    
   console.log("SwitchCss 999 : " + cssLink.href);  
 }
+
+///////////////////////////////////////////////////
+// Switch on CSS loaded file
+///////////////////////////////////////////////////
+function SwitchLanguage(sLanguage) {  
+  let cssLink = document.getElementById("csslanguage");
+  let cssEnglish = "./public/css/language-en.css";
+  let cssFrench = "./public/css/language-fr.css";
+
+  if (sLanguage == "fr") {
+    cssLink.href = cssFrench;
+  } else {
+    cssLink.href = cssEnglish;
+  }      
+}
+
 //window.onload = Init;

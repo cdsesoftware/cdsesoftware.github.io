@@ -2,7 +2,8 @@
     <head>
         <title>
             CDSE - Sofware & Development        
-        </title>        
+        </title>     
+        <link id="csslanguage" rel="stylesheet" href="./public/css/language-fr.css">
         <link id="csslink" rel="stylesheet" href="./public/css/site-dark.css">        
         <link id="csscommon" rel="stylesheet" href="./public/css/site-common.css">                        
         <script type="text/javascript" src="./public/script/site.js"></script>
@@ -11,6 +12,22 @@
     <body>
         <div class="root">
             <!-- CV HEADER -->
+            <div class="toggle-language">
+                <div class="sub-header-language">                    
+                    <div onclick="SwitchLanguage('fr')" title="Version française">
+                        <img src="./public/img/icon-flag-france-24.png">
+                    </div>
+                    <div onclick="SwitchLanguage('en')" title="English version">
+                        <img src="./public/img/icon-flag-uk-24.png">
+                    </div>
+                    <div class="toggle-day-night">
+                        <div class="sub-header-presentation">                    
+                            <div class="img-toggle-day-night" onclick="SwitchCss()" title="Changer le thème..."></div>
+                        </div>
+                    </div>        
+                </div>                
+            </div>
+
             <div class="child-row header-cv">
 
                 <div class="header-info">
@@ -74,12 +91,6 @@
                         <span class="text-web-logiciel lang-fr">LOGICIEL & WEB FULL STACK</span>
                         <span class="text-web-logiciel lang-en">FULL STACK DEVELOPMENT</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="toggle-day-night">
-                <div class="sub-header-presentation">                    
-                    <div class="img-toggle-day-night" onclick="SwitchCss()" title="Changer le thème..."></div>
                 </div>
             </div>
             
@@ -247,7 +258,7 @@
                                     Ingénieur Développement Sénior
                                 </div>
                                 <div class="content-detail-exp-poste lang-en">
-                                    Software Engineer Senior
+                                    Software engineer senior
                                 </div>                                
 
                                 <div class="content-detail-exp-client">
@@ -281,13 +292,19 @@
 
                         <!-- ENTRUST -->
                         <div class="content-left-block-detail">
-                            <div class="content-detail-date">
+                            <div class="content-detail-date lang-fr">
                                 D'octobre 2006 à octobre 2021
                             </div>
+                            <div class="content-detail-date lang-en">
+                                October 2006 - October 2021
+                            </div>
                             <div class="content-detail-exp">
-                                <div class="content-detail-exp-poste">
-                                    Ingénieur Développement Sénior 
+                                <div class="content-detail-exp-poste lang-fr">
+                                    Ingénieur Développement Sénior
                                 </div>
+                                <div class="content-detail-exp-poste lang-en">
+                                    Software engineer senior
+                                </div>                                
                                 <div class="content-detail-exp-client">
                                     <a href="https://www.entrust.com">
                                         <div class="row-centered-items">
@@ -295,54 +312,90 @@
                                             <b>&nbsp;ENTRUST</b>        
                                         </div>                                        
                                     </a>
-                                    &nbsp;à Orléans (45)                                    
+                                    &nbsp;- Orléans (45)                                    
                                 </div>
-                                <div class="content-detail-exp-mission">
-                                    Conception et développement logiciel dans le domaine de la personnalisation de documents électroniques sécurisés.
+                                <div class="content-detail-exp-mission lang-fr" >
+                                    Architecture, conception et développement logiciel dans le domaine de la personnalisation de documents électroniques sécurisés (cartes d'identité, passeports, cartes bancaires, etc.).
                                     <br>
                                     <ul>
                                         <li>
-                                            Gestionnaire d'atelier <a href="https://www.entrust.com/fr/issuance-systems/products/software/adaptive-issuance-data-process-production-management">DPP</a> : Progiciel modulaire destiné à la gestion complète de "Service Bureau" (production et personnalisation de passeports électroniques, cartes identités, cartes bancaires, etc.).                                                
+                                            Gestionnaire d'atelier <a href="https://www.entrust.com/fr/issuance-systems/products/software/adaptive-issuance-data-process-production-management">DPP</a> : Progiciel modulaire destiné à la gestion complète de "Service Bureau" (production et personnalisation de passeports, cartes identités, cartes bancaires, etc.).                                                
                                         </li>
                                         <li>
                                             Modules et plug-ins DPP personnalisés pour les ateliers clients internationaux (interfaçage plateformes, annuaires, intégration de PKI, etc.)
                                         </li>
-                                        <li>
-                                            Interface de pilotage des machines Entrust (personnalisation) et des lecteurs <a href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/document-readers/at9000-mk2">Thales AT9000</a> désigné pour le contrôle numérique et optique de documents sécurisés norme ICAO (Passeport et carte d'identité)
+                                        <li>                                            
+                                            Interface de pilotage des machines Entrust (personnalisation) et des lecteurs <a href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/document-readers/at9000-mk2">Thales AT9000</a> désignés pour le contrôle numérique et optique des documents sécurisés norme ICAO (Tous passeports et quelques cartes d'identité)                                            
                                         </li>
                                         <li>
-                                            Développement d'extensions <a href="https://www.entrust.com/issuance-systems/products/software/adaptive-issuance-instant-financial-issuance"> CardWizard </a> pour interfaçage avec les <i>Card Management System</i> de nos clients (banques internationles).
+                                            Développement d'extensions <a href="https://www.entrust.com/issuance-systems/products/software/adaptive-issuance-instant-financial-issuance"> CardWizard </a> pour interfaçage avec les <i>Card Management System</i> de nos clients (banques internationales).
                                         </li>
                                         <li>
                                             Conception de rapports de suivi de production, d'inventaire, de contrôle qualité et de statistiques sur les solutions DPP. 
                                         </li>
                                         <li>
-                                            Mise en place de formations techniques en France et à l'étranger dans le cadre d'intégrations de projets DPP (Javascript, SQL, Crystal Report, DPP API et PKI).
+                                            Mise en place et dispense de <b>formations techniques</b> en France et à l'étranger dans le cadre d'intégrations de projets DPP (Javascript, SQL, Crystal Report, DPP API et PKI).
                                         </li>
                                     </ul>                                    
                                     <b>Frameworks & Outils : </b>.NET, Delphi, Javascript, SQL, Crystal Report, SSRS, XML, SOAP, REST, GIT, SubVersion, MS Build
                                     <br>
                                     <b>Environnement : </b>Windows, VMWare, SQLServer 
                                     <br>
-                                    <b>Mode Projet : </b> Cycle en <b>V</b>(Développement modules client) et méthode <b>Agile</b> (Développement produits Entrust)
+                                    <b>Mode projet : </b>Cycle en <b>V</b>(Développement modules client) et méthode <b>Agile</b> (Développement produits Entrust)
+                                </div>
+
+                                <div class="content-detail-exp-mission lang-en" >
+                                    Architecture, design and software developement in the field of personalization of secure electronic documents (id card, passports, credit card, etc.)                                                                        
+                                    <br>
+                                    <ul>
+                                        <li>                                            
+                                            The Service Bureau Management Suite <a href="https://www.entrust.com/en/issuance-systems/products/software/adaptive-issuance-data-process-production-management">DPP</a> : Fully customizable software intended for the complete management of "Service Bureau" : production and personalization of passports, id cards, bank cards, etc.).
+                                        </li>
+                                        <li>
+                                            Modules and custom DPP plug-ins for international client Service Bureau (plateforms interface, annuaries, PKI, etc.)
+                                        </li>
+                                        <li>                                            
+                                            Entrust desktop printers interface (personalization) and <a href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/document-readers/at9000-mk2">Thales AT9000</a> document reader drivers interface development to digitally and optically control ICAO secure documents (Alls passport and some id cards)
+                                        </li>
+                                        <li>
+                                            <a href="https://www.entrust.com/issuance-systems/products/software/adaptive-issuance-instant-financial-issuance"> CardWizard </a> extensions assemblies development to interface our client <i>Card Management System</i> (international banks).
+                                        </li>
+                                        <li>                                            
+                                            Report design for both DPP product and custom projects field : production follow-up, inventory stocks, quality control, statistic, etc.
+                                        </li>
+                                        <li>
+                                            Providing technical <b>training</b> in France and abroad as part of DPP project integrations (Javascript, SQL, Crystal Report, DPP API and PKI).
+                                        </li>
+                                    </ul>                                    
+                                    <b>Frameworks & Tools : </b>.NET, Delphi, Javascript, SQL, Crystal Report, SSRS, XML, SOAP, REST, GIT, SubVersion, MS Build
+                                    <br>
+                                    <b>Environment : </b>Windows, VMWare, SQLServer 
+                                    <br>
+                                    <b>Project management : </b> <b>V</b>-Cycle (Custom modules development) et <b>Agile</b> method (DPP product development)
                                 </div>
                             </div>
                         </div>                                                
 
                         <!-- ARMONY -->
                         <div class="content-left-block-detail">
-                            <div class="content-detail-date">
+                            <div class="content-detail-date lang-fr">
                                 De janvier 2003 à octobre 2006
                             </div>
+                            <div class="content-detail-date lang-en">
+                                January 2003 - October 2006
+                            </div>
                             <div class="content-detail-exp">
-                                <div class="content-detail-exp-poste">
+                                <div class="content-detail-exp-poste lang-fr">
                                     Ingénieur d'études 
+                                </div>
+                                <div class="content-detail-exp-poste lang-en">
+                                    Software engineer
                                 </div>
                                 <div class="content-detail-exp-client">
                                     <img src="./public/img/armony-logo-32x32.png">
-                                    <b> &nbsp;ARMONY SA</b>&nbsp(ESN) à Orléans (45)
+                                    <b> &nbsp;ARMONY SA</b>&nbsp(ESN) - Orléans (45)
                                 </div>
-                                <div class="content-detail-exp-mission">
+                                <div class="content-detail-exp-mission lang-fr">
                                     Missions d'études et développement logiciel en régie et au forfait.
                                     <br>
                                     Quelques projets :
@@ -360,23 +413,47 @@
                                     </ul>
                                     <b>Framework & Outils : </b> Delphi, PHP, Javascript, TransactSQL, Windows, SqlServer
                                 </div>
+                                <div class="content-detail-exp-mission lang-en">                                    
+                                    Design and development missions in staff delegation and package development
+                                    <br>
+                                    Some projects :
+                                    <br>
+                                    <ul>
+                                        <li>
+                                            Development of a tax management software package for Approved Management Centers (CGA) for CCMX in Tours (France). (1 year)
+                                        </li>
+                                        <li>
+                                            Application maintenance of the <I>Fina+</I> public accounting management solution of the <I>Conseil régional du Centre</I>. (1 year)
+                                        </li>
+                                        <li>
+                                            Development of a production supervision tool for the Mars group in St Denis de l'hôtel (France). (4 months)
+                                        </li>
+                                    </ul>
+                                    <b>Framework & Tools : </b> Delphi, PHP, Javascript, TransactSQL, Windows, SqlServer
+                                </div>
                             </div>
                         </div> 
 
                         <!-- EUVOXA -->
                         <div class="content-left-block-detail">
-                            <div class="content-detail-date">
+                            <div class="content-detail-date lang-fr">
                                 De septembre 1999 à décembre 2002
                             </div>
+                            <div class="content-detail-date lang-en">
+                                September 1999 - December 2002
+                            </div>
                             <div class="content-detail-exp">
-                                <div class="content-detail-exp-poste">
+                                <div class="content-detail-exp-poste lang-fr">
                                     Ingénieur d'études 
+                                </div>
+                                <div class="content-detail-exp-poste lang-en">
+                                    Software engineer
                                 </div>
                                 <div class="content-detail-exp-client">
                                     <img src="./public/img/euvoxa-logo-32x32.png">
-                                    <b> &nbsp;EUVOXA</b>&nbsp(ESN) à Orléans (45)
+                                    <b> &nbsp;EUVOXA</b>&nbsp(ESN) - Orléans (45)
                                 </div>
-                                <div class="content-detail-exp-mission">
+                                <div class="content-detail-exp-mission lang-fr">
                                     Missions d'études et développement logiciel en régie et au forfait.
                                     <br>
                                     Quelques projets :
@@ -394,6 +471,25 @@
                                     </ul>
                                     <b>Framework & Outils : </b> Delphi, TransactSQL, PHP 4, Oracle, SQLServer, Apache, Windows
                                 </div>
+                                <div class="content-detail-exp-mission lang-en">
+                                    Design and development missions in staff delegation and package development
+                                    <br>
+                                    Some projects :
+                                    <br>
+                                    <ul>
+                                        <li>
+                                            Design and development of a software suite for managing affiliates (pension and unemployment insurance) for the <I>Taitbout Group</I> (now <I>Malakoff Humanis</I>) in Paris. (1 year)
+                                        </li>
+                                        <li>
+                                            Consulting, design and development of a statistics-oriented extranet web application for <I>Brémont SA</I> (insurance company). (9 months)
+                                        </li>
+                                        <li>
+                                            Full Oracle Developer 2000 training: SQL, PL-SQL and Oracle Forms. (1 month)
+                                        </li>
+                                    </ul>
+                                    <b>Framework & Tools : </b> Delphi, TransactSQL, PHP 4, Oracle, SQLServer, Apache, Windows
+                                </div>
+
                             </div>
                         </div> 
                     </div>
@@ -406,9 +502,12 @@
                             <div class="content-left-block-title-detail">
                                 <img src="./public/img/icon-competence-32x31.png">
                             </div>
-                            <div class="content-left-block-title-detail">
+                            <div class="content-left-block-title-detail lang-fr">
                                 Compétences : Framework & Langages
-                            </div>                                                                                
+                            </div>
+                            <div class="content-left-block-title-detail lang-en">
+                                Skills : Framework & Languages
+                            </div>
                         </div>
 
                         <!-- .NET -->
@@ -426,13 +525,20 @@
                                 <div class="content-detail-comptech-level" id="comp-msnet"> 
                                 </div>
 
-                                <div class="content-detail-comptech-detail">
+                                <div class="content-detail-comptech-detail lang-fr">
                                     <b class="text-highlight">Solide expérience :</b> C#, Winforms, ASP.NET Core MVC, REST, SOAP,  Win Services, NUnit, Entity Framework, AutoFac (DI) 
                                 </div>
+                                <div class="content-detail-comptech-detail lang-en">
+                                    <b class="text-highlight">Strong experience :</b> C#, Winforms, ASP.NET Core MVC, REST, SOAP,  Win Services, NUnit, Entity Framework, AutoFac (DI) 
+                                </div>
 
-                                <div class="content-detail-comptech-detail">
+                                <div class="content-detail-comptech-detail lang-fr">
                                     <span class="text-highlight">Première expérience :</span> WPF, Xamarin forms (MvvM)
                                 </div>
+                                <div class="content-detail-comptech-detail lang-en">
+                                    <span class="text-highlight">First experience :</span> WPF, Xamarin forms (MvvM)
+                                </div>
+
                             </div>                            
                         </div>                                                
 
@@ -449,8 +555,11 @@
                                 <div class="content-detail-comptech-level" id="comp-delphi"> 
                                 </div>
 
-                                <div class="content-detail-comptech-detail">
+                                <div class="content-detail-comptech-detail lang-fr">
                                     <b class="text-highlight">Solide expérience :</b> WinForms, Win Service, ActiveX/COM, ADO, Spring 4D (ORM & DI), TestInsight...
+                                </div>
+                                <div class="content-detail-comptech-detail lang-en">
+                                    <b class="text-highlight">Strong experience :</b> WinForms, Win Service, ActiveX/COM, ADO, Spring 4D (ORM & DI), TestInsight...
                                 </div>
                             </div>                            
                         </div>                                                
@@ -470,12 +579,18 @@
                                 <div class="content-detail-comptech-level" id="comp-webfrontend"> 
                                 </div>
 
-                                <div class="content-detail-comptech-detail">
+                                <div class="content-detail-comptech-detail lang-fr">
                                     <b class="text-highlight">Bonne expérience :</b> Javascript, HTML 5, CSS, Bootstrap, JQuery
                                 </div>
+                                <div class="content-detail-comptech-detail lang-en">
+                                    <b class="text-highlight">Good experience :</b> Javascript, HTML 5, CSS, Bootstrap, JQuery
+                                </div>
 
-                                <div class="content-detail-comptech-detail">
+                                <div class="content-detail-comptech-detail lang-fr">
                                     <span class="text-highlight">Première expérience :</span> Vue.js 3.0
+                                </div>
+                                <div class="content-detail-comptech-detail lang-en">
+                                    <span class="text-highlight">First experience :</span> Vue.js 3.0
                                 </div>
 
                             </div>                            
@@ -495,8 +610,11 @@
                                 <div class="content-detail-comptech-level" id="comp-php"> 
                                 </div>
 
-                                <div class="content-detail-comptech-detail">
+                                <div class="content-detail-comptech-detail lang-fr">
                                     <b class="text-highlight">Bonne expérience :</b> PHP 7, Symfony 5.x
+                                </div>
+                                <div class="content-detail-comptech-detail lang-en">
+                                    <b class="text-highlight">Good experience :</b> PHP 7, Symfony 5.x
                                 </div>
 
                             </div>                            
@@ -515,28 +633,33 @@
                                 <div class="content-detail-comptech-level" id="comp-windev"> 
                                 </div>
 
-                                <div class="content-detail-comptech-detail">
+                                <div class="content-detail-comptech-detail lang-fr">
                                     <b class="text-highlight">Bonne expérience :</b>
                                      PC Soft Windev 26
                                 </div>
-
+                                <div class="content-detail-comptech-detail lang-en">
+                                    <b class="text-highlight">Good experience :</b>
+                                     PC Soft Windev 26
+                                </div>
                             </div>                            
                         </div> 
                     </div>
 
                     <!---------------------------->
-                    <!-- COMPETENCES FRAMEWORK  -->
+                    <!-- COMPETENCES Environment-->
                     <!---------------------------->                    
                     <div class="content-left-block content-competence">
                         <div class="content-left-block-title">
                             <div class="content-left-block-title-detail">
                                 <img src="./public/img/icon-data-env-32x31.png">
                             </div>
-                            <div class="content-left-block-title-detail">
+                            <div class="content-left-block-title-detail lang-fr">
                                 Compétences : Environnement technique 
                             </div>                                                                                
+                            <div class="content-left-block-title-detail lang-en">
+                                Skills : Technical environment
+                            </div>                                                                                
                         </div>
-
 
                         <!-- DB SYSTEM -->
                         <div class="content-left-block-detail">
@@ -545,8 +668,11 @@
                                     <img src="./public/img/icon-db-24.png">
                                 </div>
                                 &nbsp;&nbsp;
-                                <div>
+                                <div class="lang-fr">
                                     Systèmes de données
+                                </div>                                 
+                                <div class="lang-en">
+                                    Data system
                                 </div>                                 
                             </div>
                             <div class="content-detail-comptech">
@@ -583,9 +709,12 @@
                                     <img src="./public/img/icon-security-24.png">
                                 </div>
                                 &nbsp;&nbsp;
-                                <div>
+                                <div class="lang-fr">
                                     Crypto & Sécurité
-                                </div>                                                                 
+                                </div>
+                                <div class="lang-en">
+                                    Crypto & Security
+                                </div>
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
@@ -601,9 +730,12 @@
                                     <img src="./public/img/icon-git-24.png">
                                 </div>
                                 &nbsp;&nbsp;
-                                <div>
+                                <div class="lang-fr">
                                     Contrôle de source & Versioning
-                                </div>                                                                 
+                                </div>
+                                <div class="lang-en">
+                                    Source control & Versioning
+                                </div>
                             </div>
                             <div class="content-detail-comptech">
                                 <div class="content-detail-comptech-detail">
@@ -635,48 +767,66 @@
                                 <div class="content-info-logo">
                                     <img src="./public/img/icon-age-24x24.png">
                                 </div>
-                                <div class="content-info-detail">
+                                <div class="content-info-detail lang-fr">
                                     47 ans
+                                </div>
+                                <div class="content-info-detail lang-en">
+                                    47 yo
                                 </div>
                             </div>
                             <div class="content-right-block-detail-line">
                                 <div class="content-info-logo">
                                     <img src="./public/img/icon-flag-20x26.png">
                                 </div>
-                                <div class="content-info-detail">
+                                <div class="content-info-detail lang-fr">
                                     Français
+                                </div>
+                                <div class="content-info-detail lang-en">
+                                    French
                                 </div>
                             </div>
                             <div class="content-right-block-detail-line">
                                 <div class="content-info-logo">
                                     <img src="./public/img/icon-permis-24x16.png">
                                 </div>
-                                <div class="content-info-detail">
+                                <div class="content-info-detail lang-fr">
                                     Permis A & B
+                                </div>
+                                <div class="content-info-detail lang-en">
+                                    Driving License A & B
                                 </div>
                             </div>
                             <div class="content-right-block-detail-line">
                                 <div class="content-info-logo">
                                     <img src="./public/img/icon-car-24x20.png">
                                 </div>
-                                <div class="content-info-detail">
+                                <div class="content-info-detail lang-fr">
                                     Véhicule personnel
+                                </div>
+                                <div class="content-info-detail lang-en">
+                                    Personal car
                                 </div>
                             </div>
                             <div class="content-right-block-detail-line">
                                 <div class="content-info-logo">
                                     <img src="./public/img/icon-localisation-16x24.png">
                                 </div>
-                                <div class="content-info-detail">
+                                <div class="content-info-detail lang-fr">
                                     Loiret / Télétravail
+                                </div>
+                                <div class="content-info-detail lang-en">
+                                    Loiret / Remote working
                                 </div>
                             </div>
                             <div class="content-right-block-detail-line">
                                 <div class="content-info-logo">
                                     <img src="./public/img/icon-family-24x23.png">
                                 </div>
-                                <div class="content-info-detail">
+                                <div class="content-info-detail lang-fr">
                                     Pacsé, 1 enfant
+                                </div>
+                                <div class="content-info-detail lang-en">
+                                    Pacs, 1 kid
                                 </div>
                             </div>
                         </div>                        
@@ -687,35 +837,87 @@
                             <div class="content-right-block-title-detail">
                                 <img src="./public/img/icon-langues-32x31.png">
                             </div>
-                            <div class="content-right-block-title-detail">
+                            <div class="lang-fr content-right-block-title-detail">
                                 Langues étrangères
                             </div>
-                        </div>                   
-                        <div class="content-right-block-detail">
-                            <div class="content-right-block-detail-line bold-1">
-                                Anglais
+                            <div class=" lang-en content-right-block-title-detail">
+                                Languages
+                            </div>
+                        </div>               
+
+                        <div class="lang-fr">
+                            <div class="content-right-block-detail">
+                                <div class="content-right-block-detail-line bold-1">
+                                    Anglais
+                                </div>    
+                                <div class="content-right-block-detail-line">
+                                    <div class="content-detail-comptech-level" id="comp-anglais"> 
+                                    </div>                                
+                                </div>    
+                                <div class="content-right-block-langue-line">
+                                    <div class="bold-1">
+                                        Ecrit :
+                                    </div>                                 
+                                    <div>
+                                        Anglais courant
+                                    </div>                                 
+                                </div>    
+                                <div class="content-right-block-langue-line">
+                                    <div class="bold-1">
+                                        Oral :
+                                    </div>                                 
+                                    <div>
+                                        Bon niveau
+                                    </div>                                 
+                                </div>    
                             </div>    
-                            <div class="content-right-block-detail-line">
-                                <div class="content-detail-comptech-level" id="comp-anglais"> 
-                                </div>                                
+                        </div>                            
+
+                        <div class="lang-en">
+                            <div class="content-right-block-detail">
+                                <div class="content-right-block-detail-line bold-1">
+                                    English
+                                </div>    
+                                <div class="content-right-block-detail-line">
+                                    <div class="content-detail-comptech-level" id="comp-anglais2"> 
+                                    </div>                                
+                                </div>    
+                                <div class="content-right-block-langue-line">
+                                    <div class="bold-1">
+                                        Writing :
+                                    </div>                                 
+                                    <div>
+                                        Fluent
+                                    </div>                                 
+                                </div>    
+                                <div class="content-right-block-langue-line">
+                                    <div class="bold-1">
+                                        Oral :
+                                    </div>                                 
+                                    <div>
+                                        Good level
+                                    </div>                                 
+                                </div>    
                             </div>    
-                            <div class="content-right-block-langue-line">
-                                <div class="bold-1">
-                                    Ecrit :
-                                </div>                                 
-                                <div>
-                                    Anglais courant
-                                </div>                                 
+                            <div class="content-right-block-detail">
+                                <div class="content-right-block-detail-line bold-1">
+                                    French
+                                </div>    
+                                <div class="content-right-block-detail-line">
+                                    <div class="content-detail-comptech-level" id="comp-french"> 
+                                    </div>                                
+                                </div>    
+                                <div class="content-right-block-langue-line">
+                                    <div class="bold-1">
+                                        Level : 
+                                    </div>                                 
+                                    <div>
+                                        Mother tongue
+                                    </div>    
+                                </div>    
                             </div>    
-                            <div class="content-right-block-langue-line">
-                                <div class="bold-1">
-                                    Oral :
-                                </div>                                 
-                                <div>
-                                    Bon niveau
-                                </div>                                 
-                            </div>    
-                        </div>         
+                        </div>                            
+
                     </div>
 
                     <div class="content-right-block content-langue">
@@ -723,23 +925,38 @@
                             <div class="content-right-block-title-detail">
                                 <img src="./public/img/icon-qualite-32x31.png">
                             </div>
-                            <div class="content-right-block-title-detail">
+                            <div class="content-right-block-title-detail lang-fr">
                                 Qualités 
                             </div>                            
+                            <div class="content-right-block-title-detail lang-en">
+                                Strengths 
+                            </div>                            
                         </div>    
+
                         <div class="content-right-block-qualite">
-                            <div class="bold-1">
-                                Automne, sociable et à l'écoute
+                            <div class="bold-1  lang-fr">
+                                Autonome, sociable et à l'écoute
                             </div>    
-                            <div class="justify">
+                            <div class="bold-1  lang-en">
+                                Independent, sociable and client attentive
+                            </div>    
+
+                            <div class="justify lang-fr">
                                 Je m'intègre toujours très facilement dans une équipe ou un service. J'aime travailler en autonomie, mais j'apprécie d'échanger avec mes collègues. 
+                            </div>    
+                            <div class="justify lang-en">
+                                I always integrate very easily into a team or a department. I like to work independently, but I enjoy talking to my colleagues.
                             </div>    
                             <div class="height-min-10">
                             </div>    
-                            <div class="bold-1">
+                            <div class="bold-1 lang-fr">
                                 Bon niveau rédactionnel 
                             </div>    
-                            <div class="justify">
+                            <div class="bold-1 lang-en">
+                                Good writing skills
+                            </div>    
+
+                            <div class="justify lang-fr">
                                 Grâce à ma longue expérience au sein d'une entreprise américaine, je pense pouvoir proposer un bon niveau rédactionnel en français et en anglais pour :
                                 <ul>
                                     <li>
@@ -753,13 +970,36 @@
                                     </li>
                                 </ul>
                             </div>    
+
+                            <div class="justify lang-en">
+                                Thanks to my long experience in an American company, I think I can offer a good level of writing in French and English for :
+                                <ul>
+                                    <li>
+                                        define functional and technical specifications
+                                    </li>
+                                    <li>
+                                        document a project or a user manual
+                                    </li>
+                                    <li>
+                                        communicate and argue via messaging for instance
+                                    </li>
+                                </ul>
+                            </div>    
+
                             <div class="height-min-10">
                             </div>    
-                            <div class="bold-1">
+                            <div class="bold-1 lang-fr">
                                 Dynamique et sportif 
                             </div>    
-                            <div class="justify">
+                            <div class="bold-1 lang-en">
+                                Dynamic and sporty 
+                            </div>    
+
+                            <div class="justify lang-fr">
                                 Il est important pour moi de rester en forme aussi bien physiquement que mentalement. Je pratique régulièrement la course à pied et le vélo. Mais la plus grande partie de mon temps libre je la consacre à ma famille et à mes amis.
+                            </div>    
+                            <div class="justify lang-en">
+                                It is important for me to stay in shape physically and to be in good spirits. I run and cycle regularly. But most of my free time is spent with my family and friends.
                             </div>    
 
                         </div>         
@@ -775,6 +1015,8 @@
             SetCompetenceNote('comp-php', 6);            
             SetCompetenceNote('comp-windev', 6);                        
             SetCompetenceNote('comp-anglais', 7);                                    
+            SetCompetenceNote('comp-anglais2', 7);                                    
+            SetCompetenceNote('comp-french', 10);
         </script>        
     </body>
 </html>
