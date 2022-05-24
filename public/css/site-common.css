@@ -103,6 +103,11 @@ body {
     padding: 10px;
 }
 
+.first-letter-style {
+    display:inline-block;
+    text-align: justify;
+}
+
 .first-letter-style::first-letter {
     font-size:2em;
     font-weight: bold;
@@ -153,10 +158,10 @@ body {
 }
 
 .sub_header_item_presentation {
+    
     color: var(--color-text-light-2);    
-    padding: 10 10% 10 0;    
-    font-size: larger;
-    text-align: justify;    
+    padding: 10 10 10 0;    
+    font-size: larger;    
 }
 
 .sub-header-social-network {
@@ -433,8 +438,6 @@ body {
 .toggle-day-night {
     margin-left: 7px;    
 }
-
-
 
 ul {
     list-style: none; /* Remove default bullets */
