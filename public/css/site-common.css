@@ -3,18 +3,19 @@ body {
 }
 
 .root {
-    background-color: var(--color-bg-root);
+    background-color: var(--color-bg-root);    
     display: flex;    
     flex-direction: column; 
     flex-wrap: wrap;
     padding: 2;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
 }
 
 .child-row {    
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;    
+    flex-wrap:nowrap;
     padding-top: 10px;
     min-height: 10px;       
 }
@@ -76,6 +77,11 @@ body {
     border-radius: 10px;
     margin-left: 10px;
     box-shadow: 5px 5px 10px;
+}
+
+.bg-title {
+    /* background-color: linear-gradient(var(--color-bg-root), var(--color-highlight-pink), var(--color-bg-root)); */
+    background-color: linear-gradient(var(--color-bg-root), var(--color-highlight-pink), var(--color-bg-root));     
 }
 
 /********** Header sub div or component ***************/

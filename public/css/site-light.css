@@ -14,7 +14,7 @@
     --color-text-light-1: #ffffff;
     --color-text-light-2: #272727;    
     --color-text-grey-1: #909090;    
-    --color-text-grey-1: #606060;        
+    --color-text-grey-2: #cecece;        
     --color-text-dark-1: #202020;    
     --color-text-dark-2: #0a0a0a;                
 }
@@ -23,7 +23,6 @@
     background-image: url(../img/background-top-light.png);    
     background-position:top left;
     background-repeat:repeat-x;
-
   }
 
 .img-logo{
