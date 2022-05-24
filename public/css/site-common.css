@@ -8,7 +8,7 @@ body {
     flex-direction: column; 
     flex-wrap: wrap;
     padding: 2;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .child-row {    
@@ -66,6 +66,16 @@ body {
     padding-bottom: 20px;
     margin-right: 80px;
     border-radius: 10px;
+}
+
+.toggle-language{
+    background-color: var(--color-text-grey-2);
+    position:sticky;
+    top:5px;    
+    width: 140px;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 10px;
 }
 
 /********** Header sub div or component ***************/
