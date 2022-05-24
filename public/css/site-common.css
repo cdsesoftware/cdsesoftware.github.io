@@ -4,12 +4,15 @@ body {
 
 .root {
     background-color: var(--color-bg-root);    
+    background-position:top left;
+    background-repeat:repeat-x;
     display: flex;    
     flex-direction: column; 
     flex-wrap: wrap;
     padding: 2;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: fit-content;
+
 }
 
 .child-row {    
@@ -24,17 +27,23 @@ body {
     text-align: justify;
 }
 
+.img-toggle-day-night { 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 78px;
+    height: 20;    
+}
+
 /**********  Header Main Div  ****************/
 .header-cv {    
     height: 30%;      
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-left: 10px;
-    padding-right: 50px;
-    
-    justify-content:space-between;
+    padding-right: 50px;    
+    justify-content: space-between;
     align-items: center;   
-    margin-top: 25px; 
+    margin-top: 45px; 
 }
 
 .header-info {    
@@ -53,20 +62,30 @@ body {
     display: flex;
     flex-direction: column; 
     justify-content: end;           
-    margin: 1% 15px 0 15px;
+    margin: 0px 15px 0 40px;
 }
 
-.header-right {         
-    height: 220;       
-    width: 450;    
+.header-presentation-footer {    
     display: flex;    
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:center;    
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 80px;
-    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    
+}
+
+.header-right {             
+    display: flex;    
+    flex-direction: column;    
+    justify-content: center;    
+    padding-left: 10%;
+}
+
+.img-logo{    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    width: 180px;
+    height: 130px; 
 }
 
 .toggle-language{
@@ -80,8 +99,21 @@ body {
 }
 
 .bg-title {
-    /* background-color: linear-gradient(var(--color-bg-root), var(--color-highlight-pink), var(--color-bg-root)); */
-    background-color: linear-gradient(var(--color-bg-root), var(--color-highlight-pink), var(--color-bg-root));     
+    background: linear-gradient(to right, var(--color-bg-root), var(--color-text-dark-1), var(--color-bg-root));     
+    padding: 10px;
+}
+
+.first-letter-style::first-letter {
+    font-size:2em;
+    font-weight: bold;
+    color: var(--color-highlight-pink);
+}
+
+.central-hr {
+    background: linear-gradient(to right, var(--color-bg-root), var(--color-blue-overdark-cdse), var(--color-bg-root));
+    height: 3px;
+    border-width: 0;
+    margin: 0px;
 }
 
 /********** Header sub div or component ***************/
@@ -89,12 +121,6 @@ body {
     width: 140px;        
     border-radius: 10px;    
     padding:10px;
-}
-
-.sub-header-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
 }
 
 .sub-header-info {    
@@ -128,7 +154,7 @@ body {
 
 .sub_header_item_presentation {
     color: var(--color-text-light-2);    
-    padding: 10 10% 10 10%;    
+    padding: 10 10% 10 0;    
     font-size: larger;
     text-align: justify;    
 }
@@ -158,12 +184,12 @@ body {
 
 /********** CONTENT **************/
 .content-left {
-    width:75%;
+    width:70%;
     margin:5px;
 }
 
 .content-right {
-    width:25%;
+    width:30%;
     margin:5px;    
 }
 
@@ -362,6 +388,10 @@ body {
     font-weight: bold;    
 }
 
+.pink {
+    color: var(--color-highlight-pink);
+}
+
 .margin_5px {
     margin:5px;
 }
@@ -382,6 +412,10 @@ body {
 
 .width-100 {
     width: 100%;
+}
+
+.height-35px {
+    height: 35px;
 }
 
 .justify {
@@ -419,7 +453,6 @@ ul {
  a {
     text-decoration: underline;
     color: inherit;    
-
     font-weight: bold;    
  }
 

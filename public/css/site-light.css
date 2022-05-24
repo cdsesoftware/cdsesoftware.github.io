@@ -1,56 +1,34 @@
 :root {
     --color-highlight-blue: #555dce;
-    --color-highlight-pink: #cfcfcf;    
+    --color-highlight-pink: #ac7474;    
     --color-blue-cdse: #2F4253;
     --color-blue-overdark-cdse: var(--color-blue-cdse);
 
-    --color-bg-root:#f0efef;
+    --color-bg-root:#e2e2e2;
     --color-bg-main-content: #c8c7ce;
     --color-bg-detail-content: #ffffff;    
 
     --color-line-odd: #EEEEEE;
     --color-line-even: #FFFFFF;
 
-    --color-text-light-1: #ffffff;
+    --color-text-light-1: #030303;
     --color-text-light-2: #272727;    
     --color-text-grey-1: #909090;    
     --color-text-grey-2: #cecece;        
-    --color-text-dark-1: #202020;    
-    --color-text-dark-2: #0a0a0a;                
+    --color-text-dark-1: #fafafa;    
+    --color-text-dark-2: #fcfcfc;                
 }
 
 .root {
     background-image: url(../img/background-top-light.png);    
-    background-position:top left;
-    background-repeat:repeat-x;
   }
 
 .img-logo{
     background-image: url(../img/Logo-white-lite-1024.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 300px;
-    height: 140;
 }
 
 .img-toggle-day-night {
     background-image: url(../img/btn-theme-day-70x30.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 78px;
-    height: 20;    
-}
-
-.central-hr {
-    background: linear-gradient(to right, var(--color-bg-root), var(--color-blue-cdse), var(--color-bg-root));
-    height: 3px;
-    border-width: 0;
-}
-
-.first-letter-style::first-letter {
-    font-size:2em;
-    font-weight: bold;
-    color: var(--color-text-grey-1);
 }
 
 
