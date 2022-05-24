@@ -11,7 +11,7 @@
 
     <body>
         <div class="root">
-            <!-- CV HEADER -->
+            
             <div class="toggle-language">
                 <div class="sub-header-language">                    
                     <div onclick="SwitchLanguage('fr')" title="Version française">
@@ -21,15 +21,17 @@
                         <img src="./public/img/icon-flag-uk-24.png">
                     </div>
                     <div class="toggle-day-night">
-                        <div class="sub-header-presentation">                    
-                            <div class="img-toggle-day-night" onclick="SwitchCss()" title="Changer le thème..."></div>
-                        </div>
+                        <div class="img-toggle-day-night" onclick="SwitchCss()" title="Changer le thème..."></div>
                     </div>        
                 </div>                
             </div>
 
+            <!-- CV HEADER -->            
             <div class="child-row header-cv">
 
+                <!------------------->
+                <!--   VISIT CARD  -->
+                <!------------------->
                 <div class="header-info">
                     <div class="sub-header-info">
                         <img class="img-id-photo" src="./public/img/christophe_dufour.jpg" >                                            
@@ -79,33 +81,37 @@
                     </div>
                 </div>
 
-                <!-- LOGO CDSE SOFTWARE -->
-                <div class="header-right">
-                    <div class="sub-header-logo">
-                        <div class="img-logo"></div>
-                    </div>     
+                <div class="header-presentation">   
                     <div class="sub_header_item_titre">
-                        <span class="lang-fr">DEVELOPPEMENT INFORMATIQUE</span>                        
-                        <span class="lang-en">SOFTWARE ENGINEERING</span>                                                
-                        <hr class="pink">
-                        <span class="text-web-logiciel lang-fr">LOGICIEL & WEB FULL STACK</span>
-                        <span class="text-web-logiciel lang-en">FULL STACK DEVELOPMENT</span>
+                        <hr class="central-hr">
+                            <span class="lang-fr">DEVELOPPEMENT LOGICIEL & WEB FULL STACK</span>
+                            <span class="lang-en">SOFTWARE ENGINEERING & FULL STACK DEVELOPMENT</span>                            
+                        <hr class="central-hr">                                                                                                                         
                     </div>
-                </div>
-            </div>
-            
-            <!-- CV PRESENTATION TEXT -->            
-            <div class="child-row">
-                <div class="sub-header-presentation">                    
-                    <div class="sub_header_item_presentation lang-fr">
+
+                    
+                    <div class="sub_header_item_presentation lang-fr first-letter-style">
                         Après plus de 20 ans d'expérience dans le développement informatique, je suis toujours animé par la même passion et la même curiosité au quotidien.
-                        Je serais ravi de pouvoir vous proposer mes services pour vos projets d'études et de développement web et logiciel.
+                        Je serais ravi de pouvoir vous proposer mes services pour vos projets d'études et de développement web et logiciel.                    
                     </div>
-                    <div class="sub_header_item_presentation lang-en">
+                    <div class="sub_header_item_presentation lang-en first-letter-style">
                         After more than 20 years of experience in software and web application development, I am still driven by the same passion and the same curiosity.
                         I would be delighted to be able to offer you my development services for your web and software development projects.
                     </div>
                 </div>
+                
+
+                <!------------------------>                
+                <!-- LOGO CDSE SOFTWARE -->
+                <!------------------------>                
+                <div class="header-right">
+                    <div class="sub-header-logo">
+                        <div class="img-logo"></div>
+                    </div>     
+                </div>
+            </div>
+            
+            <div class="child-row">
             </div>
 
             <!-- CV PRESENTATION TEXT -->            
@@ -583,9 +589,11 @@
 
                                 <div class="content-detail-comptech-detail lang-fr">
                                     <b class="text-highlight">Bonne expérience :</b> Javascript, HTML 5, CSS, Bootstrap, JQuery
+                                    <br>
                                 </div>
                                 <div class="content-detail-comptech-detail lang-en">
                                     <b class="text-highlight">Good experience :</b> Javascript, HTML 5, CSS, Bootstrap, JQuery
+                                    <br>
                                 </div>
 
                                 <div class="content-detail-comptech-detail lang-fr">
