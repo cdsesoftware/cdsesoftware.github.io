@@ -8,15 +8,16 @@
     --color-bg-main-content: #c8c7ce;
     --color-bg-detail-content: #ffffff;    
 
-    --color-line-odd: #EEEEEE;
-    --color-line-even: #FFFFFF;
+    --color-line-odd: #E8E8E8;
+    --color-line-even: #F5F5F5;
 
     --color-text-light-1: #030303;
     --color-text-light-2: #272727;    
     --color-text-grey-1: #909090;    
     --color-text-grey-2: #cecece;        
     --color-text-dark-1: #fafafa;    
-    --color-text-dark-2: #fcfcfc;                
+    --color-text-dark-2: #fcfcfc;    
+    --color-text-date: #777777;            
 }
 
 .root {
