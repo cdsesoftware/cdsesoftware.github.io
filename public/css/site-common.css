@@ -199,13 +199,13 @@ html,body {
 
 /********** CONTENT LEFT **************/
 .content-left {
-    width:70%;
+    width:100%;
     margin:5px;
 }
 
 /********** CONTENT RIGHT **************/
 .content-right {
-    width:30%;
+    width:440px;
     margin:5px;    
 }
 
@@ -221,7 +221,7 @@ html,body {
 .content-left-block-detail {        
     display: grid;
     grid-template-columns: 24% auto; 
-    margin: 4px;    
+    margin: 8px;    
     padding: 5px;
     border-radius: 5px;          
 }
@@ -237,7 +237,7 @@ html,body {
 
 /* Content right block */
 .content-right-block-detail {    
-    margin: 4px;
+    margin: 4 4 8 4;
     padding: 5px;
     border-radius: 5px;      
     align-items: center;      
@@ -260,6 +260,16 @@ html,body {
     height: 28px;    
     align-items: center;
 }
+
+.content-right-block-detail-separator {    
+    color: var(--color-bg-main-content);
+    grid-column: span 2;
+    display: block;
+}
+
+/*.content-right-block-detail-separator::after {    
+    content: "••••••••••••••••••••••••••••••••••••••";    
+}*/
 
 .content-right-block-langue-line {
     display: grid;    
