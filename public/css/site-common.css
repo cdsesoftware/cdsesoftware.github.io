@@ -42,11 +42,11 @@ html,body {
 
 /**********  Header Main Div  ****************/
 .header-cv {    
-    height: 30%;      
+    
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding-left: 10px;
-    padding-right: 50px;    
+    padding-left: 20px;
+    padding-right: 20px;    
     justify-content: space-between;
     align-items: center;   
     margin-top: 45px; 
@@ -54,8 +54,8 @@ html,body {
 
 .header-info {    
     background-color:var(--color-bg-detail-content);
-    height: 220;    
-    width: 460px;
+    height: 230px;    
+    width: 500px;
     display: flex; 
     flex-direction: row;
     justify-items: left;
@@ -64,11 +64,11 @@ html,body {
     box-shadow: 5px 5px 10px;
 }
 
-.header-presentation {
+.header-presentation {    
     display: flex;
     flex-direction: column; 
     justify-content: end;           
-    margin: 0px 15px 0 40px;
+    margin: 0px 25px 0px 25px;
 }
 
 .header-presentation-footer {    
@@ -514,8 +514,8 @@ ul {
     }
 
     .header-info{
-        width: 720px;
-        height: 360px; 
+        width: 750px;
+        height: 340px; 
         margin-bottom: 20px;    
         justify-content: space-around;       
         font-size: larger;
