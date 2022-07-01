@@ -2,7 +2,7 @@
     --color-highlight-blue: #555dce;
     --color-highlight-pink: #ECB6B6;    
     --color-blue-cdse: #2F4253;
-    --color-blue-overdark-cdse: #bdc3e0;
+    --color-blue-overdark-cdse: #adbef7;
     --color-bg-root:#6A6A6A;    
     --color-bg-main-content: #b9b9b9;
     --color-bg-detail-content: #dddddd;
@@ -14,8 +14,10 @@
     --color-text-grey-1: #909090;    
     --color-text-grey-2: #606060;        
     --color-text-dark-1: #3a3a3a;    
-    --color-text-dark-2: #0a0a0a;     
-    --color-text-date: #444444;                   
+    --color-text-dark-2: #1a1a1a;     
+    --color-text-date: #444444;
+    --color-bg-main-home: #303030; 
+    --color-bg-top-banniere: #606060;
 }
 
 .root {
@@ -26,7 +28,29 @@
     background-image: url(../img/Logo-grey-lite-1024.png);
 }
 
+
+#image-logo-home {
+    content: url(../img/Logo-grey-lite-1024.png);
+}
+
+#icon-home{
+    content: url(../img/icon-home-dark-35x28.png);
+}
+
+.img-top-main-screen {
+    background-image: url(../img/background-top.png);   
+}
+
 .img-toggle-day-night {
     background-image: url(../img/btn-theme-night-70x30.png);
+}
+
+.bottom-main-screen {
+    background-color: black;
+    color: var(--color-text-light-2);
+}
+
+.root-static-size {
+    background-image: url(../img/main-background-5.jpg);   
 }
 

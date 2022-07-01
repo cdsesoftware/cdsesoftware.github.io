@@ -15,9 +15,11 @@
     --color-text-light-2: #272727;    
     --color-text-grey-1: #909090;    
     --color-text-grey-2: #cecece;        
-    --color-text-dark-1: #fafafa;    
-    --color-text-dark-2: #fcfcfc;    
-    --color-text-date: #777777;            
+    --color-text-dark-1: #f2f2f2;    
+    --color-text-dark-2: #fdfdfd;    
+    --color-text-date: #777777;       
+    --color-bg-main-home: #eeeeee; 
+    --color-bg-top-banniere: #dcdcdc;
 }
 
 .root {
@@ -28,8 +30,28 @@
     background-image: url(../img/Logo-white-lite-1024.png);
 }
 
+#image-logo-home {
+    content: url(../img/Logo-white-lite-1024.png);
+}
+
+#icon-home{
+    content: url(../img/icon-home-light-35x28.png);
+}
+
+.img-top-main-screen {
+    background-image: url(../img/background-top-light.png);     
+}
+
 .img-toggle-day-night {
     background-image: url(../img/btn-theme-day-70x30.png);
 }
 
+.bottom-main-screen {
+    background-color: white;
+    color: var(--color-text-light-2);
+}
+
+.root-static-size {
+    background-image: url(../img/main-background-3.jpg);   
+}
 
