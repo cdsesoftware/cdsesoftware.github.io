@@ -32,11 +32,7 @@ body {
 .image-competence {
     width:140px;  
     border-radius: 10px;
-    margin: 30px;  
-}
-
-.root-static-size-120percent {
-    height:160%;    
+    margin: 30px 0px 0px 20px;  
 }
 
 .competence-title {    
@@ -74,14 +70,17 @@ body {
         font-size: 18px;
     }
 
-    .root-static-size-120percent {
-        height:180%;    
-    }    
-
     .main-home-screen-competence {          
         margin: 30 auto 0 auto;     
-        width: 800px;
-        height: 1850px;
+        width: 650px;
+        height: auto;
+    }    
+
+    .sub-line-main-competence {        
+        display: grid;
+        grid-template-columns: 150px 420px;
+        justify-items: center;    
+        text-align: justify;
     }    
     
 }

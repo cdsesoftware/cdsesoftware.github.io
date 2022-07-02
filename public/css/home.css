@@ -1,5 +1,5 @@
 body {
-    overflow-y: hidden; 
+    overflow-y: auto; 
     overflow-x: hidden; 
 }
 
@@ -45,12 +45,30 @@ body {
     margin:40px;
 }
 
+.main-home-screen {     
+    background-color: var(--color-bg-top-banniere);        
+    margin: 70 auto;     
+    width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    animation: fadeIn 1s;
+    opacity: 0.95;
+    box-shadow: 5px 5px 10px;    
+    overflow: hidden;            
+}
+
+
 @media only screen and (orientation: portrait) {
-    body {
-        overflow-y: visible; 
-        overflow-x: hidden; 
-    }    
-   
+
+    .main-home-screen {
+        width: 650px;
+        height: auto;
+    }
 
     .sub-line-container{
         flex-direction: column;

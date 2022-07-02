@@ -1,5 +1,5 @@
 body {
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden; 
 }
 
@@ -39,14 +39,19 @@ body {
 
 @media only screen and (orientation: portrait) {    
     .root-contact {
-        font-size: 18px;
+        font-size: 18px;        
     }
 
     .main-home-screen-contact {          
         margin: 30 auto 0 auto;     
-        height: 824px;
-        width: 800px;       
+        height: auto;
+        width: 650px; 
+    }    
 
+    .header-info-contact {
+        width: 500px;
+        padding: 20px;
+        font-size: smaller;
     }    
 
     .root-static-size-100percent {
