@@ -35,8 +35,7 @@ html,body {
 
 .main-home-screen {     
     background-color: var(--color-bg-top-banniere);        
-    margin: 70 auto;     
-    width: 1000px;
+    margin: 70 auto;         
     /*height: 900px;*/
     border-radius: 10px;
     display: flex;

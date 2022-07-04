@@ -47,7 +47,7 @@ body {
 .main-home-screen {     
     background-color: var(--color-bg-top-banniere);        
     margin: 24 auto;     
-    width: 1000px;
+    width: 920px;
     height: auto;
     border-radius: 10px;
     display: flex;
