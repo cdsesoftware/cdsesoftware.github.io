@@ -27,11 +27,12 @@
   }
 
 .img-logo{
-    background-image: url(../img/Logo-white-lite-1024.png);
+    background-image: url(../img/Logo-white-lite-1024.png);    
 }
 
 #image-logo-home {
-    content: url(../img/Logo-white-lite-1024.png);
+    /*content: url(../img/Logo-white-lite-1024.png);*/
+    content: url(../img/img-logo-light.jpg);
     
 }
 
@@ -56,3 +57,6 @@
     background-image: url(../img/main-background-3.jpg);   
 }
 
+.cell-header-right-home {        
+    color: var(--color-text-light-2);
+}

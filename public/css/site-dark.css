@@ -30,7 +30,8 @@
 
 
 #image-logo-home {
-    content: url(../img/Logo-grey-lite-1024.png);
+    /*content: url(../img/Logo-grey-lite-1024.png);*/
+    content: url(../img/img-logo-dark.jpg);
 }
 
 #icon-home{
@@ -52,5 +53,9 @@
 
 .root-static-size {
     background-image: url(../img/main-background-5.jpg);   
+}
+
+.cell-header-right-home {        
+    color: var(--color-text-light-2);
 }
 

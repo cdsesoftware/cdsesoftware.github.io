@@ -127,7 +127,10 @@ color: var(--color-text-light-2);
     height: 24px;
 }
 
-.first-letter-pink {    
+.first-letter-big-blue:first-letter {    
+    color: var(--color-blue-overdark-cdse);    
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .first-letter-pink:first-letter {
@@ -260,7 +263,7 @@ color: var(--color-text-light-2);
 .sub_header_item_titre {       
     color: var(--color-text-light-2);
     text-align: center;
-    font-size: 1.5em;    
+    font-size: 1.3em;    
     font-weight: 600;        
     border-radius: 10px;     
 }
@@ -557,7 +560,11 @@ color: var(--color-text-light-2);
 .justify {
     text-align: justify;
     text-justify: inter-word;
-  }  
+}  
+
+.text-align-right {
+    text-align: right;
+}
 
 .toggle-day-night {
     margin-left: 7px;    
@@ -711,6 +718,11 @@ ul {
         height: 238px;    
         margin-left: 10px;    
     }    
+
+    .first-letter-big-blue:first-letter {    
+        font-size: 2rem;
+    }
+    
 } 
 
 @keyframes fadeIn {
