@@ -4,12 +4,12 @@ CST_DARK_THEME_VALUE = 1;
 CST_LIGHT_THEME = "site-light.css";
 CST_DARK_THEME = "site-dark.css";
 
-currentTheme = "";
+currentThemeValue = "";
 
 function Init(event) {
     let url = new URL(window.location.href);    
     let argTheme = url.searchParams.get("argtheme");
-    currentTheme = CST_LIGHT_THEME_VALUE;
+    currentThemeValue = CST_LIGHT_THEME_VALUE;
     if (argTheme == CST_DARK_THEME_VALUE) {
       SwitchCss();
     }    
@@ -44,10 +44,10 @@ function SwitchCss() {
   let lightCss = CST_LIGHT_THEME;
   if (cssLink.href.indexOf(darkCss) >= 0) {
     cssLink.href = cssLink.href.replace(darkCss, lightCss);
-    currentTheme = CST_LIGHT_THEME_VALUE;
+    currentThemeValue = CST_LIGHT_THEME_VALUE;
   } else {
     cssLink.href = cssLink.href.replace(lightCss, darkCss);
-    currentTheme = CST_DARK_THEME_VALUE;
+    currentThemeValue = CST_DARK_THEME_VALUE;
   }      
   console.log("SwitchCss 999 : " + cssLink.href);  
 }
@@ -71,21 +71,21 @@ function SwitchLanguage(sLanguage) {
 // OnClick Cv 
 ///////////////////////////////////////////////////
 function ClickLocalUrl(localUrl) {
-  window.location.href = `./${localUrl}?argtheme=${currentTheme}`;
+  window.location.href = `./${localUrl}?argtheme=${currentThemeValue}`;
 }
 
 ///////////////////////////////////////////////////
 // OnLoad Css Theme
 ///////////////////////////////////////////////////
 function LoadCssTheme(){
-  alert(currentTheme);
-  switch (currentTheme) {
+  alert(currentThemeValue);
+  switch (currentThemeValue) {
     case CST_DARK_THEME_VALUE : 
       return CST_DARK_THEME;
     case CST_LIGHT_THEME_VALUE : 
       return CST_LIGHT_THEME;
     default :
-      throw new error("Theme non reconnu : " + currentTheme);
+      throw new error("Theme non reconnu : " + currentThemeValue);
   }
 }
 
