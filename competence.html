@@ -5,7 +5,7 @@
         </title>             
         <!-- ordre à respecter -->
         <link id="csslanguage" rel="stylesheet" href="./public/css/language-fr.css">
-        <link id="csslink" rel="stylesheet" href="./public/css/site-light.css">        
+        <link id="csstheme" rel="stylesheet" href="./public/css/site-light.css">        
         <link id="csscommon" rel="stylesheet" href="./public/css/site-common.css">  
         <link id="csscompetence" rel="stylesheet" href="./public/css/competence.css">                                
 
@@ -33,14 +33,14 @@
         <div class="root root-static-size root-static-size-120percent root-competence">
             <div class="toggle-language">
                 <div class="sub-header-language">                    
-                    <div onclick="SwitchLanguage('fr')" title="Version française">
+                    <div onclick="SwitchCssLanguage(CST_FRENCH_LANGUAGE)" title="Version française">
                         <img src="./public/img/icon-flag-france-24.png">
                     </div>
-                    <div onclick="SwitchLanguage('en')" title="English version">
+                    <div onclick="SwitchCssLanguage(CST_ENGLISH_LANGUAGE)" title="English version">
                         <img src="./public/img/icon-flag-uk-24.png">
                     </div>
                     <div class="toggle-day-night">
-                        <div class="img-toggle-day-night" onclick="SwitchCss()" title="Changer le thème..."></div>
+                        <div class="img-toggle-day-night" onclick="SwitchCssTheme()" title="Changer le thème..."></div>
                     </div>        
                 </div>                
             </div>    
