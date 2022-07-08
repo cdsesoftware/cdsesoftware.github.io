@@ -44,7 +44,11 @@ body {
     align-items: baseline;       
 }
 
-.service-title-item {    
+.service-title-width {
+    width: 82%;
+}
+
+.service-title-item {       
     padding: 0 3 0 3;
 }
 
