@@ -9,6 +9,9 @@ CST_KEY_THEME = "csstheme";
 CST_KEY_LANGUAGE = "csslanguage";
 
 function Init(event) {  
+  // avepdf
+  return;
+  
   SwitchCssTheme(GetPrefTheme());
   SwitchCssLanguage(GetPrefLanguage());
 }
